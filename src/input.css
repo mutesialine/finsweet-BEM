@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .header {
+    @apply flex justify-between px-[80px] py-[19.75px];
+  }
+  .header__list {
+    @apply space-x-[32px];
+  }
+  .header__link {
+    @apply text-[16px] font-[400] leading-[150%];
+  }
+  .button {
+    @apply  rounded-[12px] px-[40px] py-[16px] bg-black text-white font-bold text-sm ;
+  }
+  .button--secondary {
+    @apply bg-white text-black border-r-2 border-[#d2ccd7]
+  }
+  .button--color{
+    @apply bg-white text-black border-2 border-[#d2ccd7]
+  }
+  .button--small{
+    @apply w-[173px]
+  }
+  .hero {
+    @apply  flex flex-col justify-center items-center py-[96px] px-[208px]    gap-12 bg-gradient-to-tr from-white  to-[#def5f2] ;
+  }
+  .image{
+    @apply w-[616px]
+  }
+  
+  .input {
+    @apply flex justify-between w-[576px] bg-white pl-[8px] py-2 rounded-[12px] ;
+    
+  }
+  .input--color{
+    @apply bg-[#2b2e3c]
+  }
+  .input--small{
+    @apply w-[400px] py-1
+  }
+  .placeholder-input--color{
+    @apply bg-[#2b2e3c] 
+  }
+  .placeholder-input {
+    @apply   border-transparent placeholder:text-[#1D2130] placeholder:text-[16px] placeholder:opacity-[0.6] 
+  }
+
+  .text-heading {
+    @apply font-[700] text-[48px] w-full  leading-[120%];
+  }
+  .text-heading--big {
+    @apply  text-[56px] text-center leading-[110%];
+  }
+  .text-heading--medium {
+    @apply text-[32px] text-left;
+  }
+  .text-heading--small{
+    @apply text-[24px] leading-[140%]
+  }
+  .text-heading--footer{
+    @apply text-[18px]
+  }
+  .text-heading--highlight-center{
+    @apply text-center
+  }
+  .text-heading--center{
+    @apply text-center
+  }
+  .text-intro {
+    @apply font-normal w-full leading-[150%] text-[16px] ;
+  }
+  .text-intro--big {
+    @apply text-[18px] text-center;
+  }
+  .text-intro--left {
+    @apply text-left;
+  }
+  .text-heading--highlight{
+    @apply  font-bold  bg-gradient-to-r from-[#373FFF]  to-[#3ACAF8];
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .text-intro--center{
+    @apply text-center
+  }
+  .text-intro--gray{
+    @apply text-gray-500
+  }
+  .features {
+    @apply flex flex-col items-center  px-[80px] gap-[24px];
+  }
+ 
+  .card {
+    @apply flex gap-[32px] bg-[#eff1fd] rounded-[24px]  p-[36px]
+  }
+  .card--color{
+    @apply bg-[#f9f0fb]
+  }
+  .card--product{
+    @apply bg-none
+  }
+  
+  .card__items {
+    @apply flex flex-col gap-4
+  }
+  .card__items--border{
+    @apply  border-r-2 border-[#d2ccd7]
+  }
+  .icon {
+    @apply w-[48px] object-cover;
+  }
+  .upscale{
+    @apply flex  justify-between items-center  py-[126px] pl-[80px] pr-[120px] 
+    
+  }
+  .content {
+    @apply flex  max-w-[577px] flex-col gap-[24px]
+  }
+ 
+  .items {
+    @apply flex items-center space-x-[24px];
+  }
+  .upscale--gradient{
+    @apply bg-gradient-to-r from-[#ddf6ef] to-[#e7effb]
+  }
+  .section-cta--center {
+    @apply bg-none flex flex-col  items-center text-center gap-[24px] px-[297px] py-[128px] 
+  }
+  .brands{
+    @apply flex justify-between px-[80px] pt-[64px] 
+  }
+  .brands--resize{
+    @apply  pb-[145px] pt-[30px]
+  }
+.section-discover-more{
+  
+} 
+.clients{
+  @apply  flex flex-col  items-center gap-[48px] pt-[128px] pl-[80px] pr-[79px]
+}
+.clients__team{
+  @apply flex gap-[20px]  text-center
+}
+.clients__card{
+  @apply flex flex-col gap-[30px] justify-center border-2  items-center p-[64px]  border-[#e0ebfb] rounded-[24px]
+  
+}
+.clients__details{
+  @apply flex flex-col items-center
+}
+.footer{
+  @apply mt-[3]
+}
+.footer__content{
+  @apply  flex flex-col gap-[48px] px-[64px] py-[64px]  border-4 text-white bg-[#1d2130]
+}
+.footer__cols{
+  @apply flex  justify-between
+}
+.footer__links{
+  @apply  flex flex-col gap-[8px]
+}
+.link{
+ @apply font-normal w-full leading-[150%] text-[16px] ; 
+}
+.footer__lefside{
+  @apply flex flex-col gap-6
+}
+.footer__social{
+  @apply flex justify-between gap-4;
+}
+.post-card{
+  @apply flex items-center gap-[24px] px-[80px]
+ 
+}
+.post-details{
+  @apply flex flex-col gap-[16px] w-[411px] 
+}
+.post-mage{
+   @apply w-full 
+}
+}
+
