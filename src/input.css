@@ -47,7 +47,6 @@
   .placeholder-input {
     @apply   border-transparent placeholder:text-[#1D2130] placeholder:text-[16px] placeholder:opacity-[0.6] 
   }
-
   .text-heading {
     @apply font-[700] text-[48px] w-full  leading-[120%];
   }
@@ -80,9 +79,7 @@
   }
   .text-heading--highlight{
     @apply  font-bold  bg-gradient-to-r from-[#373FFF]  to-[#3ACAF8];
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    
   }
   .text-intro--center{
     @apply text-center
@@ -127,14 +124,13 @@
     @apply flex  max-w-[577px] flex-col gap-[24px]
   }
   .items {
-    @apply flex items-center space-x-[24px];
+    @apply flex items-center space-x-[24px]
   }
- 
   .upscale--violet{
     @apply bg-[#F0F2FE] my-[128px] py-[96px] px-[80px]
   }
   .section-cta{
-    @apply bg-gradient-to-r from-[#dbf6ef] to-[#e6eefb
+    @apply bg-gradient-to-r from-[#dbf6ef] to-[#e6eefb]
   }
   .section-cta--center {
     @apply bg-none flex flex-col  items-center text-center gap-[24px] px-[297px] py-[128px] 
@@ -178,7 +174,6 @@
   .footer__social{
     @apply flex justify-between gap-4;
   }
-
   /* product page */
   .hero-product{
     @apply bg-[url('../img/product-image/Blur-Gradient1.png')] bg-cover
@@ -227,7 +222,6 @@
   }
   .post-card{
     @apply flex items-center gap-[24px] px-[80px]
-  
   }
   .post-details{
     @apply flex flex-col gap-[16px] w-[411px] 
@@ -242,7 +236,6 @@
   .blog-text__content{
     @apply flex flex-col  max-w-[768px] gap-[20px]
   }
- 
 }
 
 
