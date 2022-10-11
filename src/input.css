@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -26,15 +27,13 @@
     @apply w-[173px]
   }
   .hero {
-    @apply  flex flex-col justify-center items-center py-[96px] px-[208px]    gap-12 bg-gradient-to-tr from-white  to-[#def5f2] ;
+    @apply  flex flex-col justify-center items-center py-[96px] px-[208px]  gap-12  ;
   }
   .image{
     @apply w-[616px]
   }
-  
   .input {
     @apply flex justify-between w-[576px] bg-white pl-[8px] py-2 rounded-[12px] ;
-    
   }
   .input--color{
     @apply bg-[#2b2e3c]
@@ -94,17 +93,24 @@
   .features {
     @apply flex flex-col items-center  px-[80px] gap-[24px];
   }
- 
   .card {
     @apply flex gap-[32px] bg-[#eff1fd] rounded-[24px]  p-[36px]
+  }
+  .card--big{
+    @apply flex flex-col  gap-[64px] px-[64px] py-[64px]
+  }
+  .card__list{
+    @apply flex gap-[64px]
   }
   .card--color{
     @apply bg-[#f9f0fb]
   }
+  .card--violet{
+    @apply bg-[#F9F0FB]
+  }
   .card--product{
     @apply bg-none
   }
-  
   .card__items {
     @apply flex flex-col gap-4
   }
@@ -115,18 +121,20 @@
     @apply w-[48px] object-cover;
   }
   .upscale{
-    @apply flex  justify-between items-center  py-[126px] pl-[80px] pr-[120px] 
-    
+    @apply flex  justify-between items-center  py-[126px] pl-[80px] pr-[120px]  
   }
   .content {
     @apply flex  max-w-[577px] flex-col gap-[24px]
   }
- 
   .items {
     @apply flex items-center space-x-[24px];
   }
-  .upscale--gradient{
-    @apply bg-gradient-to-r from-[#ddf6ef] to-[#e7effb]
+ 
+  .upscale--violet{
+    @apply bg-[#F0F2FE] my-[128px] py-[96px] px-[80px]
+  }
+  .section-cta{
+    @apply bg-gradient-to-r from-[#dbf6ef] to-[#e6eefb
   }
   .section-cta--center {
     @apply bg-none flex flex-col  items-center text-center gap-[24px] px-[297px] py-[128px] 
@@ -137,52 +145,105 @@
   .brands--resize{
     @apply  pb-[145px] pt-[30px]
   }
-.section-discover-more{
+  .clients{
+    @apply  flex flex-col  items-center gap-[48px] pt-[128px] pl-[80px] pr-[79px]
+  }
+  .clients__team{
+    @apply flex gap-[20px] text-center
+  }
+  .clients__card{
+    @apply flex flex-col gap-[30px] justify-center border-2  items-center p-[64px]  border-[#e0ebfb] rounded-[24px];
+  }
+  .clients__details{
+    @apply flex flex-col items-center
+  }
+  .footer{
+    @apply mt-[3]
+  }
+  .footer__content{
+    @apply  flex flex-col gap-[48px] px-[64px] py-[64px]  border-4 text-white bg-[#1d2130]
+  }
+  .footer__cols{
+    @apply flex  justify-between
+  }
+  .footer__links{
+    @apply  flex flex-col gap-[8px]
+  }
+  .link{
+  @apply font-normal w-full leading-[150%] text-[16px] ; 
+  }
+  .footer__lefside{
+    @apply flex flex-col gap-6
+  }
+  .footer__social{
+    @apply flex justify-between gap-4;
+  }
+
+  /* product page */
+  .hero-product{
+    @apply bg-[url('../img/product-image/Blur-Gradient1.png')] bg-cover
+  }
+  .service{
+    @apply flex flex-col gap-[48px] pr-[80px] pt-[128px] bg-[url('../img/product-image/Blur-Gradient.png')] bg-cover
+  }
+  .service__card{
+    @apply py-[96px] pl-[80px] pr-[98px]  space-y-[64px] rounded-tr-3xl bg-white  
+  }
+  .service__items{
+    @apply flex  justify-between  gap-[24px]
+  }
+  .service__list{
+    @apply flex gap-[16px] flex-col
+  }
+  .feedback{
+    @apply flex items-center justify-between pr-[229px] pt-[120px]  pb-[128px] pl-[80px]   bg-[url('../img/product-image/Blur-Gradient3.png')] bg-cover 
+  }
+  .performance{
+    @apply flex items-center justify-between pl-[80px] pr-[120px]
+  }
+  .convert{
+    @apply flex items-center justify-between pl-[80px] pr-[120px] pb-[128px] mt-[127px]
+  }
+  .collaboration{
+    @apply flex items-center justify-between pl-[80px] pr-[120px]  mb-[127px] 
+  }
   
-} 
-.clients{
-  @apply  flex flex-col  items-center gap-[48px] pt-[128px] pl-[80px] pr-[79px]
-}
-.clients__team{
-  @apply flex gap-[20px]  text-center
-}
-.clients__card{
-  @apply flex flex-col gap-[30px] justify-center border-2  items-center p-[64px]  border-[#e0ebfb] rounded-[24px]
+  /* about-us page */
+  .hero-about-us{
+    @apply flex flex-col items-center gap-[64px] pt-[96px] 
+  }
+  .analysts{
+    @apply flex flex-col items-center gap-y-4 pt-[64px] text-center
+  }
+  .coparatives{
+    @apply flex flex-col items-center gap-[48px]
+  }
+  /* blog page */
+  .blog-card{
+    @apply flex p-[48px]  border-2 rounded-2xl 
+  }
+  .blogs {
+    @apply flex flex-col  gap-[64px]  items-center
+  }
+  .post-card{
+    @apply flex items-center gap-[24px] px-[80px]
   
-}
-.clients__details{
-  @apply flex flex-col items-center
-}
-.footer{
-  @apply mt-[3]
-}
-.footer__content{
-  @apply  flex flex-col gap-[48px] px-[64px] py-[64px]  border-4 text-white bg-[#1d2130]
-}
-.footer__cols{
-  @apply flex  justify-between
-}
-.footer__links{
-  @apply  flex flex-col gap-[8px]
-}
-.link{
- @apply font-normal w-full leading-[150%] text-[16px] ; 
-}
-.footer__lefside{
-  @apply flex flex-col gap-6
-}
-.footer__social{
-  @apply flex justify-between gap-4;
-}
-.post-card{
-  @apply flex items-center gap-[24px] px-[80px]
+  }
+  .post-details{
+    @apply flex flex-col gap-[16px] w-[411px] 
+  }
+  .post-mage{
+    @apply w-full 
+  }
+  /* blog post */
+  .blog-text{
+    @apply flex flex-col justify-center  items-center pt-[28px] pb-[128px]
+  }
+  .blog-text__content{
+    @apply flex flex-col  max-w-[768px] gap-[20px]
+  }
  
 }
-.post-details{
-  @apply flex flex-col gap-[16px] w-[411px] 
-}
-.post-mage{
-   @apply w-full 
-}
-}
+
+
 

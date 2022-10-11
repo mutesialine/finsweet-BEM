@@ -551,6 +551,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -607,11 +609,6 @@ video {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
-  --tw-gradient-from: #fff;
-  --tw-gradient-to: rgb(255 255 255 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #def5f2;
   padding-top: 96px;
   padding-bottom: 96px;
   padding-left: 208px;
@@ -754,7 +751,27 @@ video {
   padding: 36px;
 }
 
+.card--big {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.card__list {
+  display: flex;
+  gap: 64px;
+}
+
 .card--color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 240 251 / var(--tw-bg-opacity));
+}
+
+.card--violet {
   --tw-bg-opacity: 1;
   background-color: rgb(249 240 251 / var(--tw-bg-opacity));
 }
@@ -792,6 +809,22 @@ video {
   max-width: 577px;
   flex-direction: column;
   gap: 24px;
+}
+
+.upscale--violet {
+  margin-top: 128px;
+  margin-bottom: 128px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 242 254 / var(--tw-bg-opacity));
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.section-cta{
+  @appl
+  
 }
 
 .section-cta--center {
@@ -869,6 +902,132 @@ video {
   gap: 1rem;
 }
 
+/* product page */
+
+.hero-product {
+  background-image: url('../img/product-image/Blur-Gradient1.png');
+  background-size: cover;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  background-image: url('../img/product-image/Blur-Gradient.png');
+  background-size: cover;
+  padding-right: 80px;
+  padding-top: 128px;
+}
+
+.service__card > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(64px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(64px * var(--tw-space-y-reverse));
+}
+
+.service__card {
+  border-top-right-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 96px;
+  padding-bottom: 96px;
+  padding-left: 80px;
+  padding-right: 98px;
+}
+
+.service__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.service__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('../img/product-image/Blur-Gradient3.png');
+  background-size: cover;
+  padding-right: 229px;
+  padding-top: 120px;
+  padding-bottom: 128px;
+  padding-left: 80px;
+}
+
+.performance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 120px;
+}
+
+.convert {
+  margin-top: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 120px;
+  padding-bottom: 128px;
+}
+
+.collaboration {
+  margin-bottom: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 120px;
+}
+
+/* about-us page */
+
+.hero-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding-top: 96px;
+}
+
+.analysts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding-top: 64px;
+  text-align: center;
+}
+
+.coparatives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+/* blog page */
+
+.blog-card {
+  display: flex;
+  border-radius: 1rem;
+  border-width: 2px;
+  padding: 48px;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
 .post-card {
   display: flex;
   align-items: center;
@@ -884,188 +1043,39 @@ video {
   gap: 16px;
 }
 
-.mt-\[127px\] {
-  margin-top: 127px;
+/* blog post */
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 128px;
 }
 
-.mb-\[127px\] {
-  margin-bottom: 127px;
+.blog-text__content {
+  display: flex;
+  max-width: 768px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .flex {
   display: flex;
 }
 
-.max-w-\[768px\] {
-  max-width: 768px;
-}
-
 .grow {
   flex-grow: 1;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .items-center {
   align-items: center;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
-.gap-\[64px\] {
-  gap: 64px;
-}
-
 .gap-\[24px\] {
   gap: 24px;
 }
 
-.gap-\[20px\] {
-  gap: 20px;
-}
 
-.gap-\[48px\] {
-  gap: 48px;
-}
-
-.gap-\[16px\] {
-  gap: 16px;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-x-6 {
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
-}
-
-.gap-y-6 {
-  row-gap: 1.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
-.rounded-tr-3xl {
-  border-top-right-radius: 1.5rem;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.bg-green-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-green-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity));
-}
-
-.bg-\[url\(\'\.\.\/img\/product-image\/Blur-Gradient1\.png\'\)\] {
-  background-image: url('../img/product-image/Blur-Gradient1.png');
-}
-
-.bg-\[url\(\'\.\.\/img\/product-image\/Blur-Gradient\.png\'\)\] {
-  background-image: url('../img/product-image/Blur-Gradient.png');
-}
-
-.bg-\[url\(\'\.\.\/img\/product-image\/Blur-Gradient3\.png\'\)\] {
-  background-image: url('../img/product-image/Blur-Gradient3.png');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.p-\[48px\] {
-  padding: 48px;
-}
-
-.py-\[96px\] {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
-
-.pt-\[96px\] {
-  padding-top: 96px;
-}
-
-.pt-\[50px\] {
-  padding-top: 50px;
-}
-
-.pt-\[28px\] {
-  padding-top: 28px;
-}
-
-.pb-\[128px\] {
-  padding-bottom: 128px;
-}
-
-.pr-\[80px\] {
-  padding-right: 80px;
-}
-
-.pt-\[128px\] {
-  padding-top: 128px;
-}
-
-.pl-\[80px\] {
-  padding-left: 80px;
-}
-
-.pr-\[98px\] {
-  padding-right: 98px;
-}
-
-.pr-\[229px\] {
-  padding-right: 229px;
-}
-
-.pt-\[120px\] {
-  padding-top: 120px;
-}
-
-.pr-\[120px\] {
-  padding-right: 120px;
-}
-
-.pt-\[60px\] {
-  padding-top: 60px;
-}
-
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[64px\] {
-  padding-top: 64px;
-}
-
-.text-center {
-  text-align: center;
-}
 
