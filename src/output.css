@@ -684,7 +684,9 @@ video {
   padding: 36px;
 }
 
-.business__gradient , .upscale__sub-title-gradient , .discover__sub-title-gradient{
+.business__gradient, 
+  .upscale__sub-title-gradient, 
+  .discover__sub-title-gradient{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -702,7 +704,8 @@ video {
   color: transparent;
 }
 
-.business__title , .section-customer__title{
+.business__title, 
+  .section-customer__title{
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -714,14 +717,22 @@ video {
   font-size: 32px;
 }
 
-.business__sub-title , .impressions__sub-title , .discover__sub-title , .features__sub-title , .service__sub-title{
+.business__sub-title, 
+  .impressions__sub-title, 
+  .discover__sub-title, 
+  .features__sub-title, 
+  .service__sub-title{
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
   line-height: 150%;
 }
 
-.business__icon , .upscale__icon , .discover__icon , .features__icon , .service__icon{
+.business__icon, 
+  .upscale__icon, 
+  .discover__icon, 
+  .features__icon, 
+  .service__icon{
   width: 48px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -733,7 +744,10 @@ video {
   gap: 1.5rem;
 }
 
-.upscale , .impressions , .brand , .discover{
+.upscale, 
+  .impressions, 
+  .brand, 
+  .discover{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -743,19 +757,24 @@ video {
   padding-right: 80px;
 }
 
-.upscale__container , .impressions__container , .discover__container{
+.upscale__container, 
+  .impressions__container, 
+  .discover__container{
   display: flex;
   max-width: 577px;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.upscale__items , .discover__items{
+.upscale__items, 
+  .discover__items{
   display: flex;
   gap: 1rem;
 }
 
-.upscale__title , .impressions__title , .discover__title{
+.upscale__title, 
+  .impressions__title, 
+  .discover__title{
   font-size: 48px;
   font-weight: 700;
   line-height: 120%;
@@ -776,11 +795,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.impressions__button--small , .footer__button--small{
+.impressions__button--small, 
+  .footer__button--small{
   width: 173px;
 }
 
-.discover__title-small , .service__title-small{
+.discover__title-small, 
+  .service__title-small{
   font-size: 24px;
   font-weight: 700;
   line-height: 140%;
@@ -797,7 +818,8 @@ video {
   padding-bottom: 128px;
 }
 
-.features__title , .service__title{
+.features__title, 
+  .service__title{
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -912,13 +934,15 @@ video {
   gap: 0.5rem;
 }
 
-.footer__link-title , .footer__sub-title{
+.footer__link-title, 
+  .footer__sub-title{
   font-size: 18px;
   font-weight: 600;
   line-height: 150%;
 }
 
-.footer__link , .footer__copyright{
+.footer__link, 
+  .footer__copyright{
   font-weight: 400;
   line-height: 150%;
   --tw-text-opacity: 1;
@@ -1078,7 +1102,10 @@ video {
   gap: 1rem;
 }
 
-.feedback , .performance, .convert , .collaboration{
+.feedback, 
+  .performance, 
+  .convert, 
+  .collaboration{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1087,14 +1114,20 @@ video {
   padding-left: 80px;
 }
 
-.feedback__container  ,  .performance__container  ,  .convert__container  ,  .collaboration__container {
+.feedback__container,  
+  .performance__container,  
+  .convert__container,  
+  .collaboration__container{
   display: flex;
   max-width: 577px;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.feedback__gradient , .performance__gradient , .convert__gradient , .collaboration__gradient{
+.feedback__gradient, 
+  .performance__gradient, 
+  .convert__gradient, 
+  .collaboration__gradient{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1112,7 +1145,10 @@ video {
   color: transparent;
 }
 
-.feedback__title , .performance__title , .convert__title , .collaboration__title{
+.feedback__title, 
+  .performance__title, 
+  .convert__title, 
+  .collaboration__title{
   max-width: 576px;
   font-size: 48px;
   font-weight: 700;
@@ -1134,4 +1170,3 @@ video {
 .gap-\[24px\]{
   gap: 24px;
 }
- 
