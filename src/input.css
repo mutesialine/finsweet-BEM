@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer components {
   .header {
@@ -14,229 +13,104 @@
   .header__link {
     @apply text-[16px] font-[400] leading-[150%];
   }
-  .button {
-    @apply  rounded-[12px] px-[40px] py-[16px] bg-black text-white font-bold text-sm ;
-  }
-  .button--secondary {
-    @apply bg-white text-black border-r-2 border-[#d2ccd7]
-  }
-  .button--color{
-    @apply bg-white text-black border-2 border-[#d2ccd7]
-  }
-  .button--small{
-    @apply w-[173px]
+  .header__button ,.hero__button ,.impressions__button ,.footer__button{
+    @apply rounded-[12px] bg-black px-[40px] py-[16px] text-sm font-bold text-white;
   }
   .hero {
-    @apply  flex flex-col justify-center items-center py-[96px] px-[208px]  gap-12  ;
+    @apply flex flex-col items-center   gap-12 py-[96px] px-[208px];
   }
-  .image{
-    @apply w-[616px]
+  .hero__title {
+    @apply text-center text-[56px] font-bold leading-[110%];
   }
-  .input {
-    @apply flex justify-between w-[576px] bg-white pl-[8px] py-2 rounded-[12px] ;
+  .hero__subtitle  {
+    @apply text-center text-lg font-normal leading-[120%];
   }
-  .input--color{
-    @apply bg-[#2b2e3c]
+  .hero__input-group {
+    @apply flex w-[576px] justify-between rounded-[12px] bg-white py-2 pl-[8px];
   }
-  .input--small{
-    @apply w-[400px] py-1
+  .hero__input {
+    @apply border-transparent  placeholder:text-[16px] placeholder:text-[#1D2130] placeholder:opacity-[0.6];
   }
-  .placeholder-input--color{
-    @apply bg-[#2b2e3c] 
+  .business{
+    @apply flex flex-col items-center  px-[80px] gap-[24px]
   }
-  .placeholder-input {
-    @apply   border-transparent placeholder:text-[#1D2130] placeholder:text-[16px] placeholder:opacity-[0.6] 
+  .business__container{
+    @apply flex gap-[32px] bg-light-violet rounded-[24px]  p-[36px]
   }
-  .text-heading {
-    @apply font-[700] text-[48px] w-full  leading-[120%];
+  .business__gradient ,.upscale__subtitle-gradient ,.discover__subtitle-gradient{
+    @apply  text-[24px] font-bold leading-[120%] 
   }
-  .text-heading--big {
-    @apply  text-[56px] text-center leading-[110%];
+  .business__title ,.features__title ,.clients__title {
+    @apply text-[48px] text-center font-bold leading-[120%]
   }
-  .text-heading--medium {
-    @apply text-[32px] text-left;
+  .business__title--medium,.features__title--medium{
+    @apply text-[32px] text-left
   }
-  .text-heading--small{
-    @apply text-[24px] leading-[140%]
+  .business__title--small{
+    @apply text-[24px] text-left leading-[140%]
   }
-  .text-heading--footer{
-    @apply text-[18px]
+  .business__subtitle ,.impressions__subtitle ,.discover__subtitle ,.features__subtitle{
+    @apply text-base leading-[150%] font-[400]
   }
-  .text-heading--highlight-center{
-    @apply text-center
-  }
-  .text-heading--center{
-    @apply text-center
-  }
-  .text-intro {
-    @apply font-normal w-full leading-[150%] text-[16px] ;
-  }
-  .text-intro--big {
-    @apply text-[18px] text-center;
-  }
-  .text-intro--left {
-    @apply text-left;
-  }
-  .text-heading--highlight{
-    @apply  font-bold  bg-gradient-to-r from-[#373FFF]  to-[#3ACAF8];
-    
-  }
-  .text-intro--center{
-    @apply text-center
-  }
-  .text-intro--gray{
-    @apply text-gray-500
-  }
-  .features {
-    @apply flex flex-col items-center  px-[80px] gap-[24px];
-  }
-  .card {
-    @apply flex gap-[32px] bg-[#eff1fd] rounded-[24px]  p-[36px]
-  }
-  .card--big{
-    @apply flex flex-col  gap-[64px] px-[64px] py-[64px]
-  }
-  .card__list{
-    @apply flex gap-[64px]
-  }
-  .card--color{
-    @apply bg-[#f9f0fb]
-  }
-  .card--violet{
-    @apply bg-[#F9F0FB]
-  }
-  .card--product{
-    @apply bg-none
-  }
-  .card__items {
-    @apply flex flex-col gap-4
-  }
-  .card__items--border{
-    @apply  border-r-2 border-[#d2ccd7]
-  }
-  .icon {
+  .business__icon ,.upscale__icon ,.discover__icon ,.features__icon{
     @apply w-[48px] object-cover;
   }
-  .upscale{
-    @apply flex  justify-between items-center  py-[126px] pl-[80px] pr-[120px]  
+  .business__card-items ,.features__card-items  {
+   @apply flex flex-col gap-6
   }
-  .content {
+  .upscale ,.impressions ,.brand ,.discover {
+   @apply flex justify-between items-center  pt-[126px] px-[80px]
+  }
+  .upscale__container ,.impressions__container ,.discover__container{
     @apply flex  max-w-[577px] flex-col gap-[24px]
   }
-  .items {
-    @apply flex items-center space-x-[24px]
+  .upscale__items ,.discover__items{
+    @apply flex gap-4
   }
-  .upscale--violet{
-    @apply bg-[#F0F2FE] my-[128px] py-[96px] px-[80px]
+  .upscale__title ,.impressions__title ,.discover__title {
+   @apply text-[48px] font-bold leading-[120%]
   }
-  .section-cta{
-    @apply bg-gradient-to-r from-[#dbf6ef] to-[#e6eefb]
+  .impressions__button--small ,.footer__button--small{
+    @apply w-[173px]
   }
-  .section-cta--center {
-    @apply bg-none flex flex-col  items-center text-center gap-[24px] px-[297px] py-[128px] 
+  .discover__title-small{
+    @apply text-[24px] font-bold leading-[140%]
   }
-  .brands{
-    @apply flex justify-between px-[80px] pt-[64px] 
+  .features{
+    @apply flex flex-col items-center px-[80px]  gap-[24px] py-[128px] 
   }
-  .brands--resize{
-    @apply  pb-[145px] pt-[30px]
+  .features__container{
+      @apply flex gap-[32px]  rounded-[24px] px-[80px]  py-[36px]
   }
   .clients{
-    @apply  flex flex-col  items-center gap-[48px] pt-[128px] pl-[80px] pr-[79px]
+    @apply flex justify-center flex-col py-[128px] px-[80px] gap-[48px]
   }
   .clients__team{
-    @apply flex gap-[20px] text-center
+    @apply flex  gap-[20px]
   }
   .clients__card{
-    @apply flex flex-col gap-[30px] justify-center border-2  items-center p-[64px]  border-[#e0ebfb] rounded-[24px];
-  }
-  .clients__details{
-    @apply flex flex-col items-center
+    @apply flex flex-col gap-[30px] justify-center border-2 items-center p-[64px]  border-[#e0ebfb] rounded-[24px]
   }
   .footer{
-    @apply mt-[3]
+    @apply flex flex-col  m-3 gap-[144px]
+  }
+  .footer__title{
+  @apply text-[48px] text-center font-bold leading-[120%] 
+  }
+  .footer__container{
+    @apply flex flex-col items-center gap-[24px]
+  }
+  .footer__subtitle{
+    @apply text-base leading-[150%] font-[400] text-center
   }
   .footer__content{
-    @apply  flex flex-col gap-[48px] px-[64px] py-[64px]  border-4 text-white bg-[#1d2130]
+    @apply  flex flex-col gap-[48px] px-[64px] py-[64px]  border-4 text-white bg-black
   }
   .footer__cols{
     @apply flex  justify-between
   }
-  .footer__links{
-    @apply  flex flex-col gap-[8px]
-  }
-  .link{
-  @apply font-normal w-full leading-[150%] text-[16px] ; 
-  }
-  .footer__lefside{
-    @apply flex flex-col gap-6
-  }
   .footer__social{
     @apply flex justify-between gap-4;
   }
-  /* product page */
-  .hero-product{
-    @apply bg-[url('../img/product-image/Blur-Gradient1.png')] bg-cover
   }
-  .service{
-    @apply flex flex-col gap-[48px] pr-[80px] pt-[128px] bg-[url('../img/product-image/Blur-Gradient.png')] bg-cover
-  }
-  .service__card{
-    @apply py-[96px] pl-[80px] pr-[98px]  space-y-[64px] rounded-tr-3xl bg-white  
-  }
-  .service__items{
-    @apply flex  justify-between  gap-[24px]
-  }
-  .service__list{
-    @apply flex gap-[16px] flex-col
-  }
-  .feedback{
-    @apply flex items-center justify-between pr-[229px] pt-[120px]  pb-[128px] pl-[80px]   bg-[url('../img/product-image/Blur-Gradient3.png')] bg-cover 
-  }
-  .performance{
-    @apply flex items-center justify-between pl-[80px] pr-[120px]
-  }
-  .convert{
-    @apply flex items-center justify-between pl-[80px] pr-[120px] pb-[128px] mt-[127px]
-  }
-  .collaboration{
-    @apply flex items-center justify-between pl-[80px] pr-[120px]  mb-[127px] 
-  }
-  
-  /* about-us page */
-  .hero-about-us{
-    @apply flex flex-col items-center gap-[64px] pt-[96px] 
-  }
-  .analysts{
-    @apply flex flex-col items-center gap-y-4 pt-[64px] text-center
-  }
-  .coparatives{
-    @apply flex flex-col items-center gap-[48px]
-  }
-  /* blog page */
-  .blog-card{
-    @apply flex p-[48px]  border-2 rounded-2xl 
-  }
-  .blogs {
-    @apply flex flex-col  gap-[64px]  items-center
-  }
-  .post-card{
-    @apply flex items-center gap-[24px] px-[80px]
-  }
-  .post-details{
-    @apply flex flex-col gap-[16px] w-[411px] 
-  }
-  .post-mage{
-    @apply w-full 
-  }
-  /* blog post */
-  .blog-text{
-    @apply flex flex-col justify-center  items-center pt-[28px] pb-[128px]
-  }
-  .blog-text__content{
-    @apply flex flex-col  max-w-[768px] gap-[20px]
-  }
-}
-
-
 

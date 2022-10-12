@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finsweet-BEM</title>
-  <link rel="stylesheet" href="./src/output.css">
+
   <link rel="stylesheet" href="./src/input.css">
+  <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body>
+  <!-- header -->
   <header class="header">
-    <img class="logo" src="./img/logo.svg" alt="">
+    <img class="header__logo" src="./img/logo.svg" alt="">
     <div class="header__list">
       <a href="./index.html" class="header__link">Home</a>
       <a href="./pages/product.html" class="header__link">Product</a>
@@ -21,243 +23,245 @@
       <a href="./pages/blog.html" class="header__link">Blog</a>
       <a href="./pages/blog_post.html" class="header__link">Blog post</a>
       <a href="#" class="header__link">contact us</a>
-      <button class="button ">Free trial</button>
+      <button class="header__button ">Free trial</button>
     </div>
   </header>
+  <!-- hero -->
   <section class="hero">
-
-    <h2 class="text-heading text-heading--big">The Best Software to Grow <br> your Sales and Services</h2>
-    <p class="text-intro text-intro--big">Lorem ipsum dolor sit amet, consetetur sadipscing elitr;<br>sed diam nonumy
+    <h2 class="hero__title">The Best Software to Grow your Sales and Services</h2>
+    <p class="hero__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr;<br>sed diam nonumy
       eirmod
       tempor invidunt ut labore et
       doloremagna aliquyam erat.</p>
-    <div class="input">
-      <input class="placeholder-input" type="email" placeholder="Enter your email">
-      <button class="button ">Get free trial</button>
-
+    <div class="hero__input-group">
+      <input class="hero__input" type="email" placeholder="Enter your email">
+      <button class="hero__button">Get free trial</button>
     </div>
-    <img src="./img/Dashboard image.png" alt="">
+    <img class="hero__image" src="./img/Dashboard image.png" alt="">
   </section>
 
-  <section class="features">
-    <p class="text-heading text-heading--small text-heading--highlight text-heading--highlight-center">High-quality</p>
-    <h2 class="text-heading text-heading--center">We have the Best Solution<br> for your Business</h2>
-    <div class="card">
-      <div class="card__items">
-        <img class="icon" src="./img/Icon 1.svg" alt="">
-        <h2 class=" text-heading text-heading--medium">High security to protect from piracy</h2>
-        <p class="text-intro ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+  <!-- solution business -->
+  <section class="business">
+    <p class="business__gradient">High-quality</p>
+    <h2 class="business__title">We have the Best Solution<br> for your Business</h2>
+    <div class="business__container">
+      <div class="business__card-items">
+        <img class="business__icon" src="./img/Icon 1.svg" alt="">
+        <h2 class=" business__title business__title--medium">High security to protect from piracy</h2>
+        <p class="business__subtitle ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
       </div>
 
-      <div class="card__items">
-        <img class="icon" src="./img/Icon 2.svg" alt="">
-        <h2 class=" text-heading text-heading--medium">Premium quality performance</h2>
-        <p class="text-intro ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+      <div class="business__card-items">
+        <img class="business__icon" src="./img/Icon 1.svg" alt="">
+        <h2 class=" business__title business__title--medium">High security to protect from piracy</h2>
+        <p class="business__subtitle ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
       </div>
 
-      <div class="card__items">
-        <img class="icon" src="./img/Icon 3.svg" alt="">
-        <h2 class=" text-heading text-heading--medium">Full time customer support - 24/7</h2>
-        <p class="text-intro ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+      <div class="business__card-items">
+        <img class="business__icon" src="./img/Icon 1.svg" alt="">
+        <h2 class=" business__title business__title--medium">High security to protect from piracy</h2>
+        <p class="business__subtitle ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
       </div>
     </div>
   </section>
+
   <section class="upscale">
-    <div class="content">
-      <p class="text-heading text-heading--small text-heading--highlight"> why should you work with us</p>
-      <h2 class="text-heading ">To upscale your business <br>to next level</h2>
-      <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ,<br> eirmod
+    <div class="upscale__container">
+      <p class=" upscale__subtitle-gradient"> why should you work with us</p>
+      <h2 class="upscale__title ">To upscale your business <br>to next level</h2>
+      <p class="upscale__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy ,<br> eirmod
         tempor invidunt ut labore et dolore
         magna aliquyam erat, sed diamb voluptua invidunt ut labore.</p>
     </div>
-    <div class="content">
-      <div class="items">
-        <img class="icon" src="./img/Icon.svg" alt="">
-        <p class="text-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+    <div class="upscale__container">
+      <div class="upscale__items">
+        <img class="upscale__icon" src="./img/Icon.svg" alt="">
+        <p class="upscale__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
       </div>
-      <div class="items">
-        <img class="icon" src="./img/Icon.svg" alt="">
-        <p class="text-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+      <div class="upscale__items">
+        <img class="upscale__icon" src="./img/Icon.svg" alt="">
+        <p class="upscale__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
       </div>
-      <div class="items">
-        <img class="icon" src="./img/Icon.svg" alt="">
-        <p class="text-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+      <div class="upscale__items">
+        <img class="upcale__icon" src="./img/Icon.svg" alt="">
+        <p class="upcale__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
       </div>
     </div>
   </section>
-  <section class="section-cta">
-    <div class="upscale upscale--gradient">
-      <div class="content">
-        <h2 class="text-heading">More impressions more conversions</h2>
-        <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-          invidunt
-          ut
-          labore et dolore
-          magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
-        <button class="button button--small">Get free trial</button>
-      </div>
-      <img class="image" src="./img/Image.png" alt="">
+  <!-- more impressions -->
+  <section class="impressions">
+    <div class="impressions__container">
+      <div class="impressions--gradient"></div>
+      <h2 class="impressions__title">More impressions more conversions</h2>
+      <p class="impressions__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+        tempor
+        invidunt
+        ut
+        labore et dolore
+        magna aliquyam erat, sed diam voluptua invidunt ut labore.</p>
+      <button class="impressions__button  impressions__button--small">Get free trial</button>
+    </div>
+    <div>
+      <img class="imppressions__image" src="./img/Image.png" alt="">
     </div>
   </section>
-  <section class="brands">
-    <img class="logoipusin" src="./img/Logo 1.svg" alt="">
-    <img class="logoipusin" src="./img/Logo 2.svg" alt="">
-    <img class="logoipusin" src="./img/Logo 3.svg" alt="">
-    <img class="logoipusin" src="./img/Logo 4.svg" alt="">
-    <img class="logoipusin" src="./img/Logo 5.svg" alt="">
+  <!-- brands -->
+  <section class="brand">
+    <img class="brand__logoipusin" src="./img/Logo 1.svg" alt="logoipusin">
+    <img class="brand__logoipusin" src="./img/Logo 2.svg" alt="logoipusin">
+    <img class="brand__logoipusin" src="./img/Logo 3.svg" alt="logoipusin">
+    <img class="brand__logoipusin" src="./img/Logo 4.svg" alt="logoipusin">
+    <img class="brand__logoipusin" src="./img/Logo 5.svg" alt="logoipusin">
   </section>
 
-  <section class="section-discover-more">
-    <div class="upscale">
-      <div class="content">
-        <p class=" text-heading text-heading--small text-heading--highlight">Discover More</p>
-        <h2 class="text-heading">Analyze your sales and<br> marketing leads</h2>
-        <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br> eirmod tempor
-          invidunt ut
-          labore et dolore
-          magna aliquyam erat, sed diam<br> voluptua invidunt ut labore.</p>
-      </div>
-      <div class="content">
-        <div class="items">
-          <img class="icon" src="./img/Feature Icon with circle.svg" alt="">
-          <div>
-            <h2 class="text-heading text-heading--small">Sales tracking</h2>
-            <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-          </div>
-        </div>
-        <div class="items">
-          <img class="icon" src="./img/Feature Icon with circle (2).svg" alt="">
-          <div>
-            <h2 class="text-heading text-heading--small">Project management</h2>
-            <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-          </div>
-        </div>
-        <div class="items">
-          <img class="icon" src="./img/Feature Icon with circle (1).svg" alt="">
-          <div>
-            <h2 class="text-heading text-heading--small">Activity Report</h2>
-            <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-          </div>
+  <!-- dicover more -->
+  <section class="discover">
+    <div class="discover__container">
+      <p class=" discover__subtitle-gradient">Discover More</p>
+      <h2 class="discover__title">Analyze your sales and<br> marketing leads</h2>
+      <p class="discover__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy<br> eirmod
+        tempor
+        invidunt ut
+        labore et dolore
+        magna aliquyam erat, sed diam<br> voluptua invidunt ut labore.</p>
+    </div>
+    <div class="discover__container">
+      <div class="discover__items">
+        <img class="discover__icon" src="./img/Feature Icon with circle.svg" alt="">
+        <div>
+          <h2 class="discover__title-small">Sales tracking</h2>
+          <p class="discover__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="features ">
-    <h2 class="text-heading text-heading--center">Features</h2>
-    <div class="card card--color">
-      <div class="card__items card__items--border ">
-        <img class="icon" src="./img/Icon@3x.svg" alt="">
-        <h2 class=" text-heading text-heading--medium">Advanced 256-bit encryption</h2>
-        <p class="text-intro text-intro--left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
-        </p>
+      <div class="discover__items">
+        <img class="discover__icon" src="./img/Feature Icon with circle.svg" alt="">
+        <div>
+          <h2 class="discover__title-small">Sales tracking</h2>
+          <p class="discover__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+        </div>
       </div>
-
-
-      <div class="card__items card__items--border">
-        <img class="icon" src="./img/Icon@1x.png" alt="">
-        <h2 class=" text-heading text-heading--medium">Simple collaboration tools</h2>
-        <p class="text-intro text-intro--left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
-        </p>
-      </div>
-
-      <div class="card__items ">
-        <img class="icon" src="./img/Icon@2x.png" alt="">
-        <h2 class=" text-heading text-heading--medium">Customizable AI features</h2>
-        <p class="text-intro text-intro--left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
-        </p>
+      <div class="discover__items">
+        <img class="discover__icon" src="./img/Feature Icon with circle.svg" alt="">
+        <div>
+          <h2 class=" discover__title-small">Sales tracking</h2>
+          <p class="discover__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+        </div>
       </div>
     </div>
   </section>
+  <!-- features -->
+  <section clzass="features">
+    <h2 class="features__title ">Features</h2>
+    <div class="features__container ">
+      <div class="features__card-items  ">
+        <img class="features__icon" src="./img/Icon@3x.svg" alt="">
+        <h2 class=" features__title features__title--medium">Advanced 256-bit encryption</h2>
+        <p class="features__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+        </p>
+      </div>
+      <div class="features__card-items  ">
+        <img class="features__icon" src="./img/Icon@3x.svg" alt="">
+        <h2 class=" features__title features__title--medium">Advanced 256-bit encryption</h2>
+        <p class="features__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+        </p>
+      </div>
+      <div class="features__card-items  ">
+        <img class="features__icon" src="./img/Icon@3x.svg" alt="">
+        <h2 class=" features__title features__title--medium">Advanced 256-bit encryption</h2>
+        <p class="features__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.
+        </p>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- clients -->
   <section class="clients">
-    <h2 class="text-heading text-heading--center">The stunning results our <br>customers have experienced</h2>
+    <h2 class="clients__title">The stunning results our <br>customers have experienced</h2>
     <div class="clients__team">
       <div class="clients__card">
-        <p class="text-intro text-intro--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        <p class="clients__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et doloremagna aliquyam erat, sed diam voluptua.</p>
         <div class="clients__details">
-          <img src="./img/photography-of-a-guy-wearing-green-shirt-1222271.svg" alt="">
-          <h2 class="text-heading text-heading--small">Ronwood</h2>
-          <p class="">CEO</p>
+          <img class="clients__image" src="./img/photography-of-a-guy-wearing-green-shirt-1222271.svg" alt="">
+          <h2 class="clients__name">Ronwood</h2>
+          <p class=" clients__position">CEO</p>
         </div>
       </div>
 
       <div class="clients__card">
-        <p class="text-intro text-intro--small">Loremipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        <p class="clients__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et doloremagna aliquyam erat, sed diam voluptua.</p>
-
         <div class="clients__details">
-          <img src="./img/photography-of-a-guy-wearing-green-shirt-1222271.svg" alt="">
-          <h2 class="text-heading text-heading--small">Ronwood</h2>
-          <p class="">CEO</p>
+          <img class="clients__image" src="./img/photography-of-a-guy-wearing-green-shirt-1222271.svg" alt="">
+          <h2 class="clients__name">Ronwood</h2>
+          <p class=" clients__position">CEO</p>
         </div>
       </div>
 
       <div class="clients__card">
-        <p class="text-intro text-intro--small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        <p class="clients__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
           eirmod tempor invidunt ut labore et doloremagna aliquyam erat, sed diam voluptua.</p>
         <div class="clients__details">
-          <img src="./img/photography-of-a-guy-wearing-green-shirt-1222271.svg" alt="">
-          <h2 class="text-heading text-heading--small">Ronwood</h2>
-          <p class="">CEO</p>
+          <img class="clients__image" src="./img/photography-of-a-guy-wearing-green-shirt-1222271.svg" alt="">
+          <h2 class="clients__name">Ronwood</h2>
+          <p class=" clients__position">CEO</p>
         </div>
       </div>
     </div>
   </section>
-
+  <!-- footer -->
   <section class="footer">
-    <div class="section-cta section-cta--center ">
-      <h2 class="text-heading">Are you ready to grow your<br> business with us?</h2>
-      <p class="text-intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-      <button class="button button--primary">Get free trial</button>
+    <div class="footer__container ">
+      <h2 class="footer__title">Are you ready to grow your<br> business with us?</h2>
+      <p class="footer__subtitle">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
+      <button class="footer__button footer__button--small">Get free trial</button>
     </div>
     <div class="footer__content">
       <div class="footer__cols">
-        <div>
-          <ul class="footer__links">
-            <li class="text-heading text-heading--footer">Company</li>
-            <li class="text-intro text-intro--gray"><a href="#">About us</a></li>
-            <li class="text-intro text-intro--gray"><a href="#">Why choose us</a></li>
-            <li class="text-intro text-intro--gray"><a href="#">Pricing</a></li>
-            <li class="text-intro text-intro--gray"><a href="#">Testimonial</a></li>
-          </ul>
-        </div>
+        <ul class="footer__link-container">
+          <li class="footer__link-title">Company</li>
+          <li class="footer__link"><a href="#">About us</a></li>
+          <li class="footer__link"><a href="#">Why choose us</a></li>
+          <li class="footer__link"><a href="#">Pricing</a></li>
+          <li class="footer__link"><a href="#">Testimonial</a></li>
+        </ul>
 
-        <ul class="footer__links">
-          <li class="text-heading text-heading--footer">Resources</li>
-          <li class="text-intro text-intro--gray"><a href="#">Privacy and policy</a></li>
-          <li class="text-intro text-intro--gray"><a href="#">Terms and conditions</a></li>
-          <li class="text-intro text-intro--gray"><a href="#">Blog</a></li>
-          <li class="text-intro text-intro--gray"><a href="#">Contact us</a></li>
+        <ul class="footer__link-container">
+          <li class="footer__link-title">Resources</li>
+          <li class="footer__link"><a href="#">Privacy and policy</a></li>
+          <li class="footer__link"><a href="#">Terms and conditions</a></li>
+          <li class="footer__link"><a href="#">Blog</a></li>
+          <li class="footer__link"><a href="#">Contact us</a></li>
         </ul>
-        <ul class="footer__links">
-          <li class="text-heading text-heading text-heading--footer">Product</li>
-          <li class="text-intro text-intro--gray"><a href="#">Privacy and policy</a></li>
-          <li class="text-intro text-intro--gray"><a href="#">Terms and conditions</a></li>
-          <li class="text-intro text-intro--gray"><a href="#">Blog</a></li>
-          <li class="text-intro text-intro--gray"><a href="#">Contact us</a></li>
+        <ul class="footer__link-container">
+          <li class="footer__link-title">Product</li>
+          <li class="footer__link"><a href="#">Privacy and policy</a></li>
+          <li class="footer__link"><a href="#">Terms and conditions</a></li>
+          <li class="footer__link"><a href="#">Blog</a></li>
+          <li class="footer__link"><a href="#">Contact us</a></li>
         </ul>
-        <ul class="footer__lefside">
+        <ul class="footer__rigthside-container">
           <li>
-            <div><img class="logo" src="./img/Finsweet white logo.svg" alt=""></div>
+            <img class="footer__logo" src="./img/Finsweet white logo.svg" alt="logo">
           </li>
-          <li>Subscrible to our Newsletter</li>
-          <li class="input input--small input--color">
-            <input class="placeholder-input placeholder-input--color" type="email" placeholder="Enter your email">
-            <button class="button button--color">Subscrible</button>
+          <li class="footer__subtitle">Subscrible to our Newsletter</li>
+          <li class="footer__input-group">
+            <input class="footer__input" type="email" placeholder="Enter your email">
+            <button class="footer__button">Subscrible</button>
           </li>
         </ul>
       </div>
       <div class="footer__social">
-        <img class="line" src="./img/Line.svg" alt="">
-        <div class="text-intro text-intro--gray">© Copyright Finsweet 2022</div>
-        <img src="./img/Facebook.svg" alt="">
-        <img src="./img/Twitter.svg" alt="">
-        <img src="./img/Instagram.svg" alt="">
-        <img src="./img/LinkedIn.svg" alt="">
-        <img class="line" src="./img/Line.svg" alt="">
+        <img class="footer__line" src="./img/Line.svg" alt="">
+        <div class="footer__copyright">© Copyright Finsweet 2022</div>
+        <img class="footer__icon" src="./img/Facebook.svg" alt="facebook">
+        <img class="footer__icon" src="./img/Twitter.svg" alt="twitter">
+        <img class="footer__icon" src="./img/Instagram.svg" alt="Instagram">
+        <img class="footer__icon" src="./img/LinkedIn.svg" alt="linkedin">
+        <img class="footer__line" class="line" src="./img/Line.svg" alt="line">
       </div>
     </div>
-
   </section>
 </body>
 
