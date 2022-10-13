@@ -1,29 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 @layer components {
   .header {
-    @apply flex justify-between px-[80px] py-[19.75px];
+    @apply flex justify-between px-20 py-5;
   }
   .header__logo {
-    @apply w-[138px];
+    @apply w-36;
   }
   .header__list {
-    @apply space-x-[32px];
+    @apply space-x-8;
   }
   .header__link {
     @apply text-base font-[400] leading-[150%];
   }
   .header__button {
-    @apply rounded-[12px] bg-black px-[40px] py-[16px] text-sm font-bold text-white;
+    @apply rounded-xl bg-black px-10 py-4 text-sm font-bold text-white;
   }
   .hero {
-    @apply flex flex-col items-center   gap-12 py-[96px] px-[208px];
+    @apply flex flex-col items-center  gap-12 py-24 px-52;
   }
   .hero__title {
-    @apply text-center text-[56px] font-bold leading-[110%];
+    @apply text-center text-6xl font-bold leading-[110%];
   }
   .hero__sub-title {
     @apply text-center text-lg font-normal leading-[120%];
@@ -32,119 +32,157 @@
     @apply flex w-[576px] justify-between rounded-l-2xl bg-white py-2 pl-[8px];
   }
   .hero__input {
-    @apply border-transparent  placeholder:text-[16px] placeholder:text-[#1D2130] placeholder:opacity-[0.6];
+    @apply border-transparent  placeholder:text-base placeholder:text-black placeholder:opacity-[0.6];
   }
   .hero__button {
     @apply header__button;
   }
   .business {
-    @apply flex flex-col items-center  gap-6 px-[80px];
+    @apply flex flex-col items-center  gap-6 px-20;
   }
   .business__container {
-    @apply flex gap-8 rounded-[24px] bg-light-violet  p-[36px];
+    @apply flex gap-8 rounded-3xl bg-light-violet  p-9;
   }
-  .business__gradient,
-  .upscale__sub-title-gradient,
+  .business__gradient {
+    @apply w-fit bg-gradient-to-r from-light-blue to-blue-300  bg-clip-text text-2xl font-bold leading-[29px] text-transparent;
+  }
+  .upscale__sub-title-gradient {
+    @apply business__gradient;
+  }
   .discover__sub-title-gradient {
-    @apply w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] bg-clip-text text-2xl font-bold leading-[29px] text-transparent;
+    @apply business__gradient;
   }
-  .business__title,
+  .business__title {
+    @apply text-center text-5xl font-bold leading-[120%];
+  }
   .section-customer__title {
-    @apply text-center text-[48px] font-bold leading-[120%];
-  }
-  .business__title--medium {
-    @apply text-left text-[32px];
-  }
-  .business__title--small {
-    @apply text-left text-[24px] leading-[140%];
-  }
-  .business__sub-title,
-  .impressions__sub-title,
-  .discover__sub-title,
-  .features__sub-title,
-  .service__sub-title {
-    @apply text-base font-[400] leading-[150%];
-  }
-  .business__icon,
-  .upscale__icon,
-  .discover__icon,
-  .features__icon,
-  .service__icon {
-    @apply w-[48px] object-cover;
+    @apply business__title;
   }
   .business__card-items {
     @apply flex flex-col gap-6;
   }
-  .upscale,
-  .impressions,
-  .brand,
-  .discover {
-    @apply flex items-center justify-between  py-[126px] px-[80px];
+  .business__title--medium {
+    @apply text-left text-3xl;
   }
-  .upscale__container,
-  .impressions__container,
-  .discover__container {
+  .business__title--small {
+    @apply text-left text-2xl leading-[140%];
+  }
+  .business__sub-title {
+    @apply text-base font-[400] leading-[150%];
+  }
+  .impressions__sub-title {
+    @apply business__sub-title;
+  }
+  .discover__sub-title {
+    @apply business__sub-title;
+  }
+  .features__sub-title {
+    @apply business__sub-title;
+  }
+  .service__sub-title {
+    @apply business__sub-title;
+  }
+  .business__icon {
+    @apply flex w-[48px] flex-col gap-6 object-cover;
+  }
+  .upscale__icon {
+    @apply business__icon;
+  }
+  .discover__icon {
+    @apply business__icon;
+  }
+  .features__icon {
+    @apply business__icon;
+  }
+  .service__icon {
+    @apply business__icon;
+  }
+  .upscale {
+    @apply flex items-center justify-between  px-20 pt-32;
+  }
+  .impressions {
+    @apply upscale mt-32 bg-gradient-to-l from-blue-200 to-green-50 pt-24;
+  }
+  .brand {
+    @apply upscale;
+  }
+  .discover {
+    @apply upscale;
+  }
+  .upscale__container {
     @apply flex  max-w-[577px] flex-col gap-6;
   }
-  .upscale__items,
-  .discover__items {
+  .impressions__container {
+    @apply upscale__container;
+  }
+  .discover__container {
+    @apply upscale__container;
+  }
+  .upscale__items {
     @apply flex gap-4;
   }
-  .upscale__title,
-  .impressions__title,
+  .discover__items {
+    @apply upscale__items;
+  }
+  .upscale__title {
+    @apply text-5xl font-bold leading-[120%];
+  }
+  .impressions__title {
+    @apply upscale__title;
+  }
   .discover__title {
-    @apply text-[48px] font-bold leading-[120%];
+    @apply upscale__title;
   }
   .impressions__button {
     @apply header__button;
   }
-  .impressions__button--small,
-  .footer__button--small {
+  .impressions__button--small {
     @apply w-[173px];
   }
-  .discover__title-small,
+  .discover__title-small {
+    @apply text-2xl font-bold leading-[140%];
+  }
   .service__title-small {
-    @apply text-[24px] font-bold leading-[140%];
+    @apply discover__title-small;
   }
   .features {
-    @apply flex flex-col items-center  gap-6 px-[80px] py-[128px];
+    @apply flex flex-col items-center  gap-6 px-20 py-32;
   }
-  .features__title,
+  .features__title {
+    @apply text-center text-5xl font-bold leading-[120%];
+  }
   .service__title {
-    @apply text-center text-[48px] font-bold leading-[120%];
+    @apply text-center text-5xl font-bold leading-[120%];
   }
   .features__title--medium {
-    @apply text-left text-[32px];
+    @apply text-left text-3xl;
   }
   .features__container {
-    @apply flex gap-8  rounded-[24px] bg-light-pink  px-[80px] py-[36px];
+    @apply flex gap-8  rounded-[24px] bg-light-pink  px-20 py-9;
   }
   .features__card-items {
     @apply flex flex-col gap-6 border-r-gray-50;
   }
   .section-customer {
-    @apply flex flex-col justify-center gap-[48px] py-[128px] px-[80px];
+    @apply flex flex-col justify-center gap-12 px-20 pb-32;
   }
   .section-customer__team {
     @apply flex  gap-5;
   }
   .section-customer__card {
-    @apply flex flex-col items-center justify-center gap-[30px] rounded-[24px] border-2  border-[#e0ebfb] p-[64px];
+    @apply flex flex-col items-center justify-center gap-8 rounded-[24px] border-2  border-[#e0ebfb] p-[64px];
   }
   .footer {
-    @apply flex flex-col  gap-[144px];
+    @apply flex flex-col  gap-36;
   }
   .footer__title {
-    @apply text-center text-[48px] font-bold leading-[120%];
+    @apply text-center text-5xl font-bold leading-[120%];
   }
   .footer__container {
-    @apply flex flex-col items-center gap-[24px];
-  }
-  .footer__sub-title {
-    @apply text-center text-base font-[400] leading-[150%];
+    @apply flex flex-col items-center gap-6;
   }
   .footer__content {
-    @apply flex flex-col gap-[48px] border-4 bg-black  px-[64px] py-[64px] text-white;
+    @apply flex flex-col gap-12 border-4 bg-black  px-16 py-16 text-white;
   }
   .footer__cols {
     @apply flex  justify-between;
@@ -152,13 +190,17 @@
   .footer__link-container {
     @apply flex flex-col gap-2;
   }
-  .footer__link-title,
-  .footer__sub-title {
-    @apply text-[18px] font-semibold leading-[150%];
+  .footer__link-title {
+    @apply text-sm font-semibold leading-[150%];
   }
-  .footer__link,
-  .footer__copyright {
+  .footer__sub-title {
+    @apply footer__link-title;
+  }
+  .footer__link {
     @apply font-normal leading-[150%] text-gray-500;
+  }
+  .footer__copyright {
+    @apply footer__link;
   }
   .footer__rigthside-container {
     @apply flex flex-col items-center gap-2;
@@ -170,10 +212,13 @@
     @apply rounded-l-2xl  bg-gray-900;
   }
   .footer__input {
-    @apply bg-transparent px-[22px];
+    @apply bg-transparent px-5;
   }
   .footer__button {
     @apply header__button;
+  }
+  .footer__button--small {
+    @apply impressions__button--small;
   }
   .footer__button--white {
     @apply bg-white text-black;
@@ -183,13 +228,13 @@
   }
   /* productpage */
   .grow-sales {
-    @apply flex  items-center justify-between  px-[80px] pt-[126px];
+    @apply flex  items-center justify-between px-20 pt-32;
   }
   .grow-sales__container {
     @apply flex flex-col gap-8;
   }
   .grow-sales__title {
-    @apply text-left text-[56px] font-bold leading-[110%];
+    @apply text-left text-5xl font-bold leading-[110%];
   }
   .grow-sales__sub-title {
     @apply text-lg font-normal leading-[120%];
@@ -207,10 +252,10 @@
     @apply border-2 border-blue-100 bg-white  text-black;
   }
   .service {
-    @apply flex flex-col items-center gap-6 bg-[url('../img/product-image/Blur-Gradient.png')] bg-cover pr-[80px] pt-[128px];
+    @apply mt-32 flex flex-col items-center gap-6 bg-[url('../img/product-image/Blur-Gradient.png')] bg-cover  pr-20 pt-32;
   }
   .service__card {
-    @apply flex flex-col gap-16 rounded-tr-3xl bg-white py-[96px] pl-[80px] pr-[98px];
+    @apply flex flex-col gap-16 rounded-tr-3xl bg-white py-24 pl-20 pr-24;
   }
   .service__items {
     @apply flex gap-6;
@@ -218,28 +263,52 @@
   .service__list {
     @apply flex flex-col gap-4;
   }
-  .feedback,
-  .performance,
-  .convert,
-  .collaboration {
-    @apply flex items-center justify-between pr-[229px] pt-[128px]   pl-[80px];
+  .feedback {
+    @apply flex items-center justify-between pr-32 pt-32  pl-20;
   }
-  .feedback__container,
-  .performance__container,
-  .convert__container,
+  .performance {
+    @apply feedback;
+  }
+  .convert {
+    @apply feedback;
+  }
+  .collaboration {
+    @apply feedback;
+  }
+  .feedback__container {
+    @apply upscale__container;
+  }
+  .performance__container {
+    @apply upscale__container;
+  }
+  .convert__container {
+    @apply upscale__container;
+  }
   .collaboration__container {
     @apply upscale__container;
   }
-  .feedback__gradient,
-  .performance__gradient,
-  .convert__gradient,
-  .collaboration__gradient {
-    @apply w-fit bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] bg-clip-text text-2xl font-bold leading-[29px] text-transparent;
+  .feedback__gradient {
+    @apply w-fit bg-gradient-to-r from-light-blue to-blue-300 bg-clip-text text-2xl font-bold leading-[29px] text-transparent;
   }
-  .feedback__title,
-  .performance__title,
-  .convert__title,
+  .performance__gradient {
+    @apply feedback__gradient;
+  }
+  .convert__gradient {
+    @apply feedback__gradient;
+  }
+  .collaboration__gradient {
+    @apply feedback__gradient;
+  }
+  .feedback__title {
+    @apply max-w-xl text-5xl font-bold leading-[150%];
+  }
+  .performance__title {
+    @apply feedback__title;
+  }
+  .convert__title {
+    @apply feedback__title;
+  }
   .collaboration__title {
-    @apply max-w-[576px] text-[48px] font-bold leading-[58px];
+    @apply feedback__title;
   }
 }
